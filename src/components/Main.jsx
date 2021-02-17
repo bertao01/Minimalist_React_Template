@@ -1,14 +1,11 @@
 import React from "react";
-import Button from "./Button";
-import Article from "./Article"
+import Articles from "./Articles"
 
 const Main = () => {
  
   return (
     <div>
-      <Article/>
-      <Article/>
-      <Article/>
+      <Articles/>
     </div>
   );
 };

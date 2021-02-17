@@ -1,13 +1,19 @@
 import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Routes from './Routes'
 
 const Nav = () => {
     return (
-        <div>
-              <nav>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">LOGO</a>
+    <Router>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <Link className="navbar-brand" to="/">LOGO</Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -15,23 +21,23 @@ const Nav = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <Link className="nav-link" to="/"
+                >Home <span className="sr-only">(current)</span></Link
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contribute</a>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contribute">Contribute</Link>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link dropdown-toggle"
+                to="/"
                 id="navbarDropdown"
                 role="button"
                 data-toggle="dropdown"
@@ -39,31 +45,31 @@ const Nav = () => {
                 aria-expanded="false"
               >
                 Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">About</a>
-                <a class="dropdown-item" href="#">Dashboard</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Login</a>
+              </Link>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <Link className="dropdown-item" to="/about">About</Link>
+                <Link className="dropdown-item" to="/dashboard">Dashboard</Link>
+                <div className="dropdown-divider"></div>
+                <Link className="dropdown-item" to="/login">Login</Link>
               </div>
             </li>
           
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form className="form-inline my-2 my-lg-0">
             <input
-              class="form-control mr-sm-2"
+              className="form-control mr-sm-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
               Search
             </button>
           </form>
         </div>
       </nav>
-    </nav>
-        </div>
+      <Routes />
+    </Router>
     )
 }
 
