@@ -9,7 +9,8 @@ import Main from './Main'
 import Login from './Login'
 import Dashboard from './Dashboard'
 import About from './About'
-import Contribute from './Contribute'
+import Donate from './Donate'
+import Contact from './Contact'
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -36,8 +37,11 @@ export default function Routes() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/contribute">
-            <Contribute/>
+          <Route path="/Donate">
+            <Donate/>
+          </Route>
+          <Route path="/Contact">
+            <Contact/>
           </Route>
         </Switch>
     </>
