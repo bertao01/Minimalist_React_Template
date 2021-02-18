@@ -1,6 +1,7 @@
 import React from 'react'
+import Button from './Button'
 
-const Login = () => {
+const Login = (props) => {
     return (
         <div className="jumbotron d-flex text-center justify-content-center">
             <form className="form-signin">
@@ -15,7 +16,7 @@ const Login = () => {
                     <input type="checkbox" value="remember-me"/> Remember me
                     </label>
                 </div>
-                <button className="btn btn-lg btn-primary btn-block " type="submit">Sign in</button>
+                <Button name="Sign in"></Button>
             </form>
         </div>
     )

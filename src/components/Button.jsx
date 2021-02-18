@@ -4,7 +4,7 @@ const Button = (props) => {
     return (
         <>
             <div className="container text-center">
-                <button className="brn btn-success">{props.name}</button>
+                <button className="btn btn-primary btn-lg" type="submit">{props.name}</button>
             </div>
         </>
     )
