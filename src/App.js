@@ -1,14 +1,13 @@
 import React from 'react'
 import "./App.css";
-import Header from './components/Header'
-import Nav from './components/Nav'
-import Main from './components/Main'
-import Footer from './components/Footer'
+import Header from './components/partials/Header'
+import Nav from './components/partials/Nav'
+import Footer from './components/partials/Footer'
 
-function App() {
+function App(props) {
   return (
     <>
-      <Header />
+      <Header title="This is a Header"/>
       <Nav />
       <Footer />
     </>
