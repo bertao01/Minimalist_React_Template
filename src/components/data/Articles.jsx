@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../partials/Button'
-import data from './data'
+import posts from './posts'
 
 const Articles = () => {
 
@@ -8,7 +8,7 @@ const Articles = () => {
         <>
         <div className="jumbotron d-flex text-center justify-content-center">
             <div className="col-sm-6 text-justify">
-                {data.map((item) => {
+                {posts.map((item) => {
                     return(
                       <div className="mb-4">
                           <h1 key={item.id} className="text-center">

@@ -10,7 +10,7 @@ const Login = (props) => {
 
     const [user, setUser] = useState({name:"",email:""})
     const [error, setError] = useState("")
-    const [details, setDetails] = useState({name:"", email:"", password:""})
+    const [details, setDetails] = useState({email:"", password:""})
     
 
     const login = details => {
@@ -65,8 +65,7 @@ const Login = (props) => {
                         type="password" 
                         id="inputPassword" 
                         className="form-control mb-3" 
-                        placeholder="Password" 
-                        required=""
+                        placeholder="Password"
                         onChange={e => {
                             setDetails({ ...details, password: e.target.value})}}
                         value={details.password}

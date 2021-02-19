@@ -7,9 +7,7 @@ import {
 } from "react-router-dom";
 import Main from '../pages/Main'
 import Login from '../pages/Login'
-import Dashboard from '../pages/Dashboard'
 import About from '../pages/About'
-import Donate from '../pages/Donate'
 import Contact from '../pages/Contact'
 import Register from '../pages/Register'
 import Posts from '../pages/Posts'
@@ -36,17 +34,11 @@ export default function Routes() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
           <Route path="/register">
             <Register />
           </Route>
           <Route path="/login">
             <Login />
-          </Route>
-          <Route path="/Donate">
-            <Donate/>
           </Route>
           <Route path="/Contact">
             <Contact/>
