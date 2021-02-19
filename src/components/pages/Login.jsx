@@ -19,7 +19,7 @@ const Login = (props) => {
                 <Button 
                     name="Sign in"
                     event={(e)=>{
-                        alert("Form Sent !")
+                        alert("Login Form Sent !")
                         e.preventDefault()
                     }}
                 />

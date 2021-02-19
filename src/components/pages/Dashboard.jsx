@@ -1,12 +1,17 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+const element = <FontAwesomeIcon icon={faCoffee} size="10x" />
 
 const Dashboard = () => {
     return (
         <div className="jumbotron">
             <h1>Dashboard</h1>
-            <p>Place dedicated to dashboard</p>
-            <img src="https://images.freeimages.com/images/large-previews/8c9/grapho-1236660.jpg" className="w-50" alt="Languages-popularity"/>
-        </div>
+            <p>Login to access the Dashboard</p>
+            {element}
+            </div>
     )
 }
 

@@ -2,15 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer bg-dark">
-        <div className="container text-center">
-          <span className="text-muted">
-            This is a minimalist template made with bootstrap
-          </span>
-        </div>
-      </footer>
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Your Website</small>
     </div>
+  </footer>
   );
 };
 

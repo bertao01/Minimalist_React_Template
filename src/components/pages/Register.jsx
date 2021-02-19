@@ -46,7 +46,7 @@ const Register = () => {
     <Button 
         name="Submit" 
         event={(e)=>{
-            alert("Form Sent !")
+            alert("Register Form Sent !")
             e.preventDefault()
         }}
         />

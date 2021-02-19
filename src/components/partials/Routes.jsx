@@ -12,6 +12,8 @@ import About from '../pages/About'
 import Donate from '../pages/Donate'
 import Contact from '../pages/Contact'
 import Register from '../pages/Register'
+import Connection from '../pages/Connection'
+import Posts from '../pages/Posts'
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -28,6 +30,9 @@ export default function Routes() {
        <Switch>
           <Route exact path="/">
             <Main />
+          </Route>
+          <Route path="/posts">
+            <Posts />
           </Route>
           <Route path="/about">
             <About />
@@ -46,6 +51,9 @@ export default function Routes() {
           </Route>
           <Route path="/Contact">
             <Contact/>
+          </Route>
+          <Route path="/Connection">
+            <Connection/>
           </Route>
         </Switch>
     </>

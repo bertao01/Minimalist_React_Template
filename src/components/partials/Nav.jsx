@@ -22,10 +22,16 @@ const Nav = () => {
               <a className="nav-link" href="/">Home<span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
+              <a className="nav-link" href="/Posts">Posts</a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" href="/about">About us<span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/donate">Donate</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/Contact">Contact us</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/dashboard">Dashboard</a>
@@ -35,6 +41,9 @@ const Nav = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/login">Login</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link text-success" href="/Connection">Node js Connection</a>
             </li>
           </ul>
         </div>

@@ -11,7 +11,13 @@ const Contact = () => {
                 <input type="email" className="form-control mb-3" required />
                 <label htmlFor="email">Message</label>
                 <textarea name="" id="" cols="30" rows="10" className="form-control" placeholder="Your message goes here"  required></textarea>
-                <Button name="Send"></Button>
+                <Button 
+                    name="Send"
+                    event={(e)=>{
+                        alert('Message Sent')
+                        e.preventDefault()
+                    }}
+                />
             </form>
         </div>
     )
