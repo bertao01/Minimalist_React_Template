@@ -12,7 +12,6 @@ import About from '../pages/About'
 import Donate from '../pages/Donate'
 import Contact from '../pages/Contact'
 import Register from '../pages/Register'
-import Connection from '../pages/Connection'
 import Posts from '../pages/Posts'
 
 // This site has 3 pages, all of which are rendered
@@ -51,9 +50,6 @@ export default function Routes() {
           </Route>
           <Route path="/Contact">
             <Contact/>
-          </Route>
-          <Route path="/Connection">
-            <Connection/>
           </Route>
         </Switch>
     </>

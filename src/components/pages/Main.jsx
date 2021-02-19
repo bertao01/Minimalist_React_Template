@@ -5,7 +5,7 @@ const Main = () => {
  
   return (
     <div className="jumbotron d-flex text-center justify-content-center">
-      <div className="col-sm-6 text-justify m-3">
+      <div className="col-sm-6 text-justify">
       <h1>Welcome to my minimalist React Template</h1>
       <p>This template was made with:</p>
       <ul>
@@ -23,25 +23,3 @@ const Main = () => {
 };
 
 export default Main;
-
-
-/*
-  <>
-        <div className="jumbotron d-flex text-center justify-content-center">
-            <div className="col-sm-6 text-justify m-3">
-                {data.map((item) => {
-                    return(
-                      <div>
-                          <h1 key={item.id} className="text-center">
-                              {item.title}
-                          </h1>
-                          <p className="text-justify">
-                              {item.text}
-                          </p>
-                      </div>
-                    )
-                })}
-            </div>
-        </div>
-    </>
-*/

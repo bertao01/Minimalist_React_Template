@@ -42,9 +42,6 @@ const Nav = () => {
             <li className="nav-item">
               <a className="nav-link" href="/login">Login</a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link text-success" href="/Connection">Node js Connection</a>
-            </li>
           </ul>
         </div>
       </nav>

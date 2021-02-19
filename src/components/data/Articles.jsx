@@ -15,7 +15,7 @@ const Articles = () => {
                               {item.title}
                           </h1>
                           <p className="text-justify">
-                              {item.text}
+                              {item.text.slice(0,300) + '...'}
                           </p>
                           <Button 
                             name="More..." 

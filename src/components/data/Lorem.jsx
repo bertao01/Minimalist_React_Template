@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Lorem = () => {
+
+    let stdContainer = "jumbotron d-flex text-center justify-content-center"
+
     return (
         <>
             <p className="mt-3 text-justify">
